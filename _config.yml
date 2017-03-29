@@ -6,7 +6,7 @@
 name: Munur unca
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: Data scientist in training
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars1.githubusercontent.com/u/13813779?v=3&s=460
@@ -21,9 +21,9 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: https://github.com/MunurTunca
+  github: MunurTunca
   instagram:
-  linkedin: https://www.linkedin.com/in/munurtunca/
+  linkedin: munurtunca
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: 
