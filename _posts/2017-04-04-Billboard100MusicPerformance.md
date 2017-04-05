@@ -54,8 +54,8 @@ This is what the data looks like. There are columns for the year (2000), name of
     <td>63</td>
     <td>49</td>
     <td>...</td>
-    <td>***********************</td>
-    <td>*********************</td>
+    <td>*</td>
+    <td>*</td>
   </tr>
   <tr>
     <td>2000</td>
@@ -69,8 +69,8 @@ This is what the data looks like. There are columns for the year (2000), name of
     <td>8</td>
     <td>6</td>
     <td>...</td>
-    <td>*******************</td>
-    <td>*****************</td>
+    <td>*</td>
+    <td>*</td>
   </tr>
   <tr>
     <td>2000</td>
@@ -84,8 +84,8 @@ This is what the data looks like. There are columns for the year (2000), name of
     <td>48</td>
     <td>43</td>
     <td>...</td>
-    <td>***************</td>
-    <td>*************</td>
+    <td>*</td>
+    <td>*</td>
   </tr>
   <tr>
     <td>2000</td>
@@ -99,8 +99,8 @@ This is what the data looks like. There are columns for the year (2000), name of
     <td>23</td>
     <td>18</td>
     <td>...</td>
-    <td>***********</td>
-    <td>*********</td>
+    <td>*</td>
+    <td>*</td>
   </tr>
   <tr>
     <td>2000</td>
@@ -114,8 +114,8 @@ This is what the data looks like. There are columns for the year (2000), name of
     <td>47</td>
     <td>45</td>
     <td>...</td>
-    <td>*****</td>
-    <td>***</td>
+    <td>*</td>
+    <td>*</td>
   </tr>
 </table> 
 
