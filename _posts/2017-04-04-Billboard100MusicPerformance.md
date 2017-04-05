@@ -29,10 +29,10 @@ This is what the data looks like. There are columns for the year (2000), name of
 year | artist.inverted | track | time | genre | date.entered | date.peaked | x1st.week | x2nd.week | x3rd.week | ... | x75th.week | x76th.week 
 --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- 
 2000 | Destiny's Child | Independent Women Part I | 3,38,00 AM | Rock | September 23, 2000 | November 18, 2000 | 78 | 63 | 49 | ... | * | * 
-2000 | Santana | Maria, Maria | 4,18,00 AM | Rock | February 12, 2000 | April 8, 2000 15 | 8 | 6 | ... | * | * 
+2000 | Santana | Maria, Maria | 4,18,00 AM | Rock | February 12, 2000 | April 8, 2000 | 15 | 8 | 6 | ... | * | * 
 2000 | Savage Garden | I Knew I Loved You | 4,07,00 AM | Rock | October 23, 1999 | January 29, 2000 | 71 | 48 | 43 | ... | * | * 
 2000 | Madonna | Music | 3,45,00 AM | Rock | August 12, 2000 | September 16, 2000 | 41 | 23 | 18 | ... | * | * 
-2000 | Aguilera, Christina | Come On Over Baby (All I Want Is You) | 3,38,00 AM | Rock | August 5, 2000 | October 14, 2000 | 57 | 47 | 45 | ... | * | * 
+2000 | Aguilera, Christina | Come On Over Baby (All I Want Is You) | 3,38,00 AM | Rock | August 5, 2000 | October 14, 2000 | 57 | 47 | 45 | ... | * | *  
 
 The first thing that peaked my curiosity was the song length. Knowing that the songs that chart on the Billboard 100 are often played on the radio, I concluded that songs that are shorter in length would be more popular. With that in mind I decided to explore this part of the data.
 
