@@ -26,6 +26,26 @@ I will be making the following assumptions about this data:
 
 This is what the data looks like. There are columns for the year (2000), name of the artist (last name first), name of song, length of song, genre, date entered Billboard 100, date peaked (highest charting), and the weeks with song rank (lower is better).
 
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+
 <table>
   <tr>
     <th>year</th>
