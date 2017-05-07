@@ -84,7 +84,7 @@ __Insights__:
 
 
 <div id="" style="overflow:scroll; height:300px;">
-![imdb_feature_corr](../images/imdb_feature_corr.png)
+![imdb_feature_corr](/images/imdb_feature_corr.png)
 </div>
 
 ### Modeling
@@ -108,15 +108,14 @@ When looking at the top 10 important features selected by the random forest, I n
 
 <style>
 table {
-    font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: auto;
 }
 
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
-    padding: 8px;
+    padding: 3px;
 }
 
 tr:nth-child(even) {
@@ -169,23 +168,6 @@ Test mse: 0.0113450975007
 
 Interestingly enough the only difference in feature importance was the substitution of critic reviews to USA.
 
-<style>
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-</style>
 
 | Feature       | Importance |
 | ------------- | ---------- |
