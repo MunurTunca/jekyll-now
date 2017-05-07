@@ -83,7 +83,9 @@ __Insights__:
 - Though Walt Disney Pictures and Animation are associated with higher ranked movies, Family movies appear in the bottom five with a negative correlation to rank.
 
 
-![](/images/imdb_feature_corr.png)
+<div id="" style="overflow:scroll; height:300px;">
+    <img src='https://github.com/MunurTunca/munurtunca.github.io/blob/master/images/imdb_feature_corr.png?raw=true' />
+</div>
 
 ### Modeling
 
