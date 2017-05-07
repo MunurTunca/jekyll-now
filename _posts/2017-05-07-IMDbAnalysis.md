@@ -3,7 +3,7 @@ layout: post
 title: Factors that affect movie ratings - An exploratory analysis
 ---
 
-### Intro
+
 
 Entertainment has been an integral part of society for as far as history shows. From plays of old to movies and TV shows of now, humans have always been interested in these types of art forms. However, what makes any of these a success? Is there a combination of factors that influence how we rate entertainment forms,such as movies? Lets find out!
 
@@ -80,11 +80,12 @@ The last thing I visualized was a heat map of how each of the selected features 
 __Insights__:
 
 - Jim Belushi and Bruce Willis are associated with lower ranking movies. They either end up with bas scripts or may not be as talented as we think.
-- Though Walt Disney Pictures and Animation are associated with higher ranked movies, Family movies appear in the bottom five with a negative correlation to rank
+- Though Walt Disney Pictures and Animation are associated with higher ranked movies, Family movies appear in the bottom five with a negative correlation to rank.
 
 
 <div id="" style="overflow:scroll; height:300px;">
 ![imdb_feature_corr](../images/imdb_feature_corr.png)
+</div>
 
 ### Modeling
 
