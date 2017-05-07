@@ -57,7 +57,7 @@ As the last step in web scraping, I wrote a function to gather IMDb movie IDs. W
 
 As mentioned in the intro, the point of this analysis was to find which factors contribute to a movies rating. To do this I visualized some parts of my data using [Plotly](https://plot.ly/) and [Seaborn](https://seaborn.pydata.org/).
 
-Before I dived into anything, I wanted to take a look at the distribution of ratings.In a normally distributed rating data on a scale of 1-10, we would expect the average (mean) to be five stars. However, in this dataset the mean rating was  6.4. This told me that the data was skewed left which a simple distribution plot showed. 
+Before I dived into anything, I wanted to take a look at the distribution of ratings.In a normally distributed rating data on a scale of 1-10, we would expect the average (mean) to be five stars. However, in this dataset the mean rating was  6.4. This told me that the data was skewed left which a simple distribution plot showed.
 
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~munur_tunca/24.embed"></iframe>
 
@@ -75,7 +75,7 @@ Another interesting find was the rating distribution by movie genre. The mean ra
 
 
 
-The last thing I visualized was a heat map of how each of the selected features correlated with the ratings. It didn't come as a surprise that the number of awards won and the number of award nominations was highly correlated with a movies rating. However there were some interesting insights in this heat map. 
+The last thing I visualized was a heat map of how each of the selected features correlated with the ratings. It didn't come as a surprise that the number of awards won and the number of award nominations was highly correlated with a movies rating. However there were some interesting insights in this heat map.
 
 __Insights__:
 
@@ -83,8 +83,8 @@ __Insights__:
 - Though Walt Disney Pictures and Animation are associated with higher ranked movies, Family movies appear in the bottom five with a negative correlation to rank
 
 
-
-![imdb_feature_corr](C:\Users\Munur\Desktop\munurtunca.github.io\munurtunca.github.io\images\imdb_feature_corr.png)
+<div id="" style="overflow:scroll; height:300px;">
+![imdb_feature_corr](../images/imdb_feature_corr.png)
 
 ### Modeling
 
@@ -104,6 +104,24 @@ Test mse: 0.0108463953815
 ```
 
 When looking at the top 10 important features selected by the random forest, I noticed that it was very similar to the correlation heat map displayed earlier.
+
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
 
 | Feature        | Importance |
 | -------------- | ---------- |
@@ -133,7 +151,7 @@ Train mse: 0.00148336008587
 Test mse: 0.010839637669
 ```
 
-The third and last ensemble model I tried was the Extreme Random Forrest Regressor. `ExtraTreesRegressor(n_estimators=500, max_depth=20)` This model actually performed worse in the test dataset than both the bagging and random forest models. 
+The third and last ensemble model I tried was the Extreme Random Forrest Regressor. `ExtraTreesRegressor(n_estimators=500, max_depth=20)` This model actually performed worse in the test dataset than both the bagging and random forest models.
 
 ```python
 Train R^2 score: 0.987421136866
@@ -149,6 +167,24 @@ Test mse: 0.0113450975007
 
 
 Interestingly enough the only difference in feature importance was the substitution of critic reviews to USA.
+
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
 
 | Feature       | Importance |
 | ------------- | ---------- |
@@ -175,6 +211,6 @@ We can also run linear regression, and classifier models such as KNN or other en
 
 ### Final Thoughts
 
-It may be cliché but movies are a form of visual art with many human experiences and emotions contributing to its rating. Although we can gather data on movies, we cannot evaluate this critical part of connectedness to a movie. This makes it difficult to evaluate it's ranking based solely on its attributes. 
+It may be cliché but movies are a form of visual art with many human experiences and emotions contributing to its rating. Although we can gather data on movies, we cannot evaluate this critical part of connectedness to a movie. This makes it difficult to evaluate it's ranking based solely on its attributes.
 
 As computers get smarter with more powerful processors and algorithms, one day they may be able create movies from scratch as they create art now without any input. When this happens then we may be able to understand contributions to a movies success better than before.
