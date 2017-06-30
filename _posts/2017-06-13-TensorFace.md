@@ -23,7 +23,7 @@ It was particularly difficult finding data that was categorized and bundled. One
 
 The adience files are color pictures of all sizes that were gathered from user uploads via Flickr with their permission. An example of a picture would be something like this:
 
-<img src="../images/coarse_tilt_aligned_face.367.11837475765_58243a430f_o.jpg" height="200px"/> {: .center-image }
+<img src="../images/coarse_tilt_aligned_face.367.11837475765_58243a430f_o.jpg" height="200px"/>{: .center-image }
 
 ​									Picture 1: Some cool kid
 
