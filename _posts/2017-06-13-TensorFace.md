@@ -23,13 +23,13 @@ It was particularly difficult finding data that was categorized and bundled. One
 
 The adience files are color pictures of all sizes that were gathered from user uploads via Flickr with their permission. An example of a picture would be something like this:
 
-<img src="../images/coarse_tilt_aligned_face.367.11837475765_58243a430f_o.jpg" height="200px" />
+<img src="../images/coarse_tilt_aligned_face.367.11837475765_58243a430f_o.jpg" height="200px" align="middle"/>
 
 ​									Picture 1: Some cool kid
 
 Face expression dataset is made of 48x48 grayscale images that were assembled using various websites. The data is a list of pixel values. These values can be converted into pictures such as the following;
 
-<img src="../images/angry_242.jpg" height="200px" />
+<img src="../images/Angry_242.jpg" height="200px" align="middle"/>
 
 ​								Picture 2: He who must not be named
 
