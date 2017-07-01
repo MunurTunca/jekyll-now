@@ -29,9 +29,9 @@ The adience files are color pictures of all sizes that were gathered from user u
 
 Face expression dataset is made of 48x48 grayscale images that were assembled using various websites. The data is a list of pixel values. These values can be converted into pictures such as the following;
 
-<img src="../images/Angry_242.jpg" height="200px" align="middle"/>
+ <p align="center"><img src="../images/Angry_242.jpg" height="200px" align="middle"/> </p>
 
-​								Picture 2: He who must not be named
+<p align="center"> Picture 2: He who must not be named </p>
 
 
 
@@ -39,7 +39,7 @@ Face expression dataset is made of 48x48 grayscale images that were assembled us
 
 The facial expression dataset consists of 35,887 images broken into seven categories of emotion; Angry, Disgust, Fear, Happy, Sad, Surprise, and Neutral. After looking at how many pictures were in each category, I decided to to drop Disgust. Disgust only had 547 pictures, compared to all other categories which had over 4,000.
 
-<img src="../images/FacialExpressionPictures.jpg" height="400px" />
+ <p align="center"><img src="../images/FacialExpressionPictures.jpg" height="400px" /> </p>
 
 
 
@@ -53,13 +53,13 @@ The distribution of the age groups looked a little funky with 25-32 yr group hav
 
 
 
-<img src="../images/AgePictures.jpg" height="400px" />
+ <p align="center"><img src="../images/AgePictures.jpg" height="400px" /> </p>
 
 
 
 The distribution of gender was a lot better. Both groups had almost an equal number of pictures at ~4,800 each.
 
-<img src="../images/GenderPictures.jpg" height="400px" />
+ <p align="center"><img src="../images/GenderPictures.jpg" height="400px" /> </p>
 
 
 
@@ -75,13 +75,13 @@ The last step was to write a script to classify these parameters by loading in a
 
 After all this was done, I passed in some images to see my predictions. My favorite ones to play around with were a screenshots from superhero movies because who doesn't love super heroes! Lets take this screenshot from Wonder Woman (2017) for example.
 
-<img src="../images/wonderwoman.jpg" height="300px" />
+ <p align="center"> <img src="../images/wonderwoman.jpg" height="300px" /> </p>
 
 ​					Gal Gadot had did an awesome job portraying Wonder Woman
 
 After passing in this image into our model, it finds the face, labels it, and returns the categories this picture belongs to with their probabilities.
 
-<img src="../images/WonderWomanDetected.jpg" height="380px" />
+ <p align="center"><img src="../images/WonderWomanDetected.jpg" height="380px" /> </p>
 
 The picture is returned in a separate window and the prediction is displayed in Jupyter. Although this was fine for me, it was not very user friendly if anyone else was to run my code. Which brings us to the next part; building an app. 
 
@@ -89,11 +89,19 @@ The picture is returned in a separate window and the prediction is displayed in 
 
 ## Flask Web App
 
-Building the [Flask](flask.pocoo.org) app was where I had the most fun in this project. It was interesting to combine my Data Science skillset with those of what you might see in web development. 
+Building the [Flask](flask.pocoo.org) app was where I had the most fun in this project. It was interesting to combine my Data Science skillset with those you might see in web development. Being able to create a front-end to work with python code was very exciting.
 
+The biggest challenge I faced when creating the app was displaying the results to the user. More specifically the returned picture. I did not want to save a picture before returning it due to memory and discovery issues. As a result, I looked at ways of temporarily storing a picture in memory and being able to display this picture in HTML. It took some creativity and reading many StackOverflow answers but I was able to get this part done.
 
+Another challenge was labeling the faces. Initially the faces were not labeled which posed a problem for someone trying to understand the predictions. There was no way to know which prediction belonged to which person. This prompted me to number each face in a picture. This was relatively easy to do. However, I was not happy with having the same font for each detected face. To avoid having static fonts, I looked at faces with varying face rectangles (the red rectangle around a detected face) and ran a linear regression model to have dynamic fonts. 
 
+The last part was to make the whole thing look pretty. I did what anyone without web development experience would do and used [Bootstrap](http://getbootstrap.com/) to prettify my app. The website was very minimalistic with only a text entry form to enter the picture of a URL as shown below.
 
+<p align="center"><img src="../images/CapstoneWebappLanding.jpg"  /> </p>
+
+This page redirects the user to the prediction. We can see an example below with Robert Downey Jr. as Iron Man where the model gets the age completely wrong.
+
+<p align="center"><img src="../images/CapstoneWebappPrediction.jpg" height="500px"/> </p> 
 
 ## Conclusion/Next Steps
 
